@@ -26,7 +26,7 @@ class AdminController extends Controller
     	$result = DB::table('tbl_admin')->where('admin_email', $admin_email)->where('admin_password',$admin_password)->first();
     	if ($result) {
     		Session::put('admin_name',$result->admin_name);
-    		Session::put('admin_id',$result->id);
+    		Session::put('admin_id',$result->admin_id);
     		return view('admin_layout');
     	}
     	else {
@@ -45,5 +45,8 @@ class AdminController extends Controller
     	return redirect('admin');
     }
 
-
+	public function getProfile() {
+    	return view('pages.admin_profile');
+	}
+	
 }

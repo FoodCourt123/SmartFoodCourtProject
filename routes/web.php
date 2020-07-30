@@ -27,6 +27,8 @@ Route::get('logout','AdminController@logout');
 
 Route::post('/admin_dashboard', 'AdminController@getdashboard');
 
+Route::get('admin/profile','AdminController@getProfile');
+
 //Category
 Route::get('admin/themcategory', 'CategoryProductController@themcategory');
 
