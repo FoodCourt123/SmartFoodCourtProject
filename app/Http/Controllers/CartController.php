@@ -30,11 +30,14 @@ class CartController extends Controller
         if ($message) {
             $cate_product = DB::table('tbl_category_product')->orderby('category_id')->get();
             $brand_product = DB::table('tbl_brand')->orderby('brand_id')->get();
-            return view('pages.showcart')->with('cate_product',$cate_product)->with('brand_product',$brand_product);
+            return view('pages.cart.show_cart')->with('cate_product',$cate_product)->with('brand_product',$brand_product);
         }
         else {
-            Session::put('check_sign','Log in first');
-           return Redirect::to('/login_checkout');
+            $cate_product = DB::table('tbl_category_product')->orderby('category_id')->get();
+            $brand_product = DB::table('tbl_brand')->orderby('brand_id')->get();
+            return view('pages.cart.show_cart')->with('cate_product',$cate_product)->with('brand_product',$brand_product);
+            //Session::put('check_sign','Log in first');
+            //return Redirect::to('/login_checkout');
         }
     	
     }
