@@ -85,6 +85,12 @@ Route::get('xembrand/{brand_id}','BrandProductController@viewbrandbyid');
 
 Route::get('xemproduct/{product_id}','ProductController@viewproductbyid');
 
+Route::get('login_checkout','CheckOutController@login_checkout');
+
+
+
+
+//Cart
 Route::post('addgiohang','CartController@addgiohang');
 
 Route::get('showcart','CartController@showcart');
@@ -93,10 +99,9 @@ Route::get('deletecart/{rowId}','CartController@deletecart');
 
 Route::post('updatecart/{rowId}','CartController@updatecart');
 
-Route::get('login_checkout','CheckOutController@login_checkout');
 
-Route::post('login','CheckOutController@login');
-
-Route::post('signup','CheckOutController@signup');
-
+//Checkout
 Route::get('showcheckout','CheckOutController@showcheckout');
+Route::get('login-checkout','CheckOutController@login_checkout');
+Route::post('login','CheckOutController@login');
+Route::post('signup','CheckOutController@signup');

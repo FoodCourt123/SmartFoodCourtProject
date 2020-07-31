@@ -13,7 +13,7 @@ class CheckOutController extends Controller
     public function login_checkout () {
     	$cate_product = DB::table('tbl_category_product')->orderby('category_id')->get();
     	$brand_product = DB::table('tbl_brand')->orderby('brand_id')->get();
-    	return view('pages.logincheckout')->with('cate_product',$cate_product)->with('brand_product',$brand_product);
+    	return view('pages.checkout.login_checkout')->with('cate_product',$cate_product)->with('brand_product',$brand_product);
     }
 
     public function signup (Request $request) {
@@ -56,7 +56,7 @@ class CheckOutController extends Controller
         if ($message) {
            $cate_product = DB::table('tbl_category_product')->orderby('category_id')->get();
             $brand_product = DB::table('tbl_brand')->orderby('brand_id')->get();
-            return view('pages.checkout')->with('cate_product',$cate_product)->with('brand_product',$brand_product);
+            return view('pages.checkout.show_checkout')->with('cate_product',$cate_product)->with('brand_product',$brand_product);
         }
 
     	else {

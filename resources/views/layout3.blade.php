@@ -1,3 +1,4 @@
+<!--Sử dụng sau khi đăng nhập -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,11 +62,11 @@
                     <div class="col-sm-8">
                         <div class="shop-menu pull-right">
                             <ul class="nav navbar-nav">
-                                <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-                                <li><a href="#"><i class="fa fa-star"></i> Wishlist</a></li>
-                                
-                                <li><a href="{{URL::to('showcart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                                <li><a href="{{URL::to('login_checkout')}}"><i class="fa fa-lock"></i> Login</a></li>
+                                <li><a href="{{URL::to('login_checkout')}}"><i class="fa fa-user"></i> Tài khoản</a></li>
+                                <li><a href="#"><i class="fa fa-star"></i> Yêu thích</a></li>
+
+                                <li><a href="{{URL::to('showcart')}}"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a></li>
+                                <li><a href="{{URL::to('login_checkout')}}"><i class="fa fa-lock"></i> Đăng nhập</a></li>
                             </ul>
                         </div>
                     </div>
@@ -87,24 +88,7 @@
                         </div>
                         <div class="mainmenu pull-left">
                             <ul class="nav navbar-nav collapse navbar-collapse">
-                                <li><a href="{{URL::to('/trang_chu')}}" class="active">Home</a></li>
-                                <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="shop.html">Products</a></li>
-                                        <li><a href="product-details.html">Product Details</a></li> 
-                                        <li><a href="checkout.html">Checkout</a></li> 
-                                        <li><a href="cart.html">Cart</a></li> 
-                                        <li><a href="login.html">Login</a></li> 
-                                    </ul>
-                                </li> 
-                                <li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Blog List</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li> 
-                                <li><a href="404.html">404</a></li>
-                                <li><a href="contact-us.html">Contact</a></li>
+                                <li><a href="{{URL::to('/trang_chu')}}" class="active">Trang chủ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -141,7 +125,7 @@
                     <div class="col-sm-2">
                         <div class="companyinfo">
                             <h2><span>e</span>-shopper</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+                            <p>Ăn no, không lo về giá</p>
                         </div>
                     </div>
                     <div class="col-sm-7">
@@ -160,50 +144,6 @@
                             </div>
                         </div>
                         
-                        <div class="col-sm-3">
-                            <div class="video-gallery text-center">
-                                <a href="#">
-                                    <div class="iframe-img">
-                                        <img src="images/home/iframe2.png" alt="" />
-                                    </div>
-                                    <div clas="overlay-icon">
-                                        <i class="fa fa-play-circle-o"></i>
-                                    </div>
-                                </a>
-                                <p>Circle of Hands</p>
-                                <h2>24 DEC 2014</h2>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-3">
-                            <div class="video-gallery text-center">
-                                <a href="#">
-                                    <div class="iframe-img">
-                                        <img src="images/home/iframe3.png" alt="" />
-                                    </div>
-                                    <div class="overlay-icon">
-                                        <i class="fa fa-play-circle-o"></i>
-                                    </div>
-                                </a>
-                                <p>Circle of Hands</p>
-                                <h2>24 DEC 2014</h2>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-3">
-                            <div class="video-gallery text-center">
-                                <a href="#">
-                                    <div class="iframe-img">
-                                        <img src="images/home/iframe4.png" alt="" />
-                                    </div>
-                                    <div class="overlay-icon">
-                                        <i class="fa fa-play-circle-o"></i>
-                                    </div>
-                                </a>
-                                <p>Circle of Hands</p>
-                                <h2>24 DEC 2014</h2>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
